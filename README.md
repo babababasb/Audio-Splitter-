@@ -1,4 +1,4 @@
-# 6s Music Splitter (音频切片工具)
+# Audio Splitter (音频切片工具)
 
 解析度高、体验流畅的音频处理利器。
 
