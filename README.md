@@ -1,6 +1,3 @@
-
----
-
 ```markdown
 # 6s Music Splitter (音频切片工具)
 
