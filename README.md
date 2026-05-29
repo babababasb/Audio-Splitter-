@@ -40,3 +40,42 @@
 ## 🛠️ 开发者指南
 
 如果您想对本项目进行二次开发或自行通过源码编译，请遵循以下步骤：
+
+### 1. 环境准备
+* **Java JDK**: 推荐使用 JDK 8 或更高版本（本项目完全兼容 Java 8）。
+* **IDE**: 推荐使用 IntelliJ IDEA。
+* **构建工具**: Maven 3.x 及以上。
+
+### 2. 获取源码与引擎
+1. 克隆本项目到本地：
+   ```bash
+   git clone https://github.com/babababasb/Audio-Splitter-.git
+   ```
+2. 下载 Windows 版本的 FFmpeg 运行时。
+3. 在项目内新建目录，将 `ffmpeg.exe` 放入以下路径：
+   ```text
+   src/main/resources/bin/ffmpeg.exe
+   ```
+
+### 3. 编译打包
+1. 打开终端，在项目根目录下执行以下 Maven 命令：
+   ```bash
+   mvn clean package
+   ```
+2. 编译成功后，在 `target/` 目录下会生成带所有依赖的胖 JAR 包：
+   ```text
+   target/6s_music-1.0-SNAPSHOT-jar-with-dependencies.jar
+   ```
+3. 您可以使用 **Launch4j** 等工具，将该 JAR 包转换打包为最终的 `.exe` 可执行文件。
+
+---
+
+## 🤝 贡献与致谢
+
+* **UI 皮肤支持**：感谢 [FlatLaf](https://github.com/JFormDesigner/FlatLaf) 提供的现代化暗黑 Swing 主题。
+* **核心音频引擎**：感谢 [FFmpeg](https://ffmpeg.org/) 提供的强大音频处理支持。
+
+---
+
+> **Developed By WanAn 2026**
+```
